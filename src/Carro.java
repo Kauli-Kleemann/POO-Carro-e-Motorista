@@ -1,8 +1,15 @@
 public class Carro {
     int bancos;
     boolean radio;
-    String motor;
     int ano;
+    Motor motor;
+
+    public Carro(int bancos, boolean radio, int ano, Motor motor) {
+        this.bancos = bancos;
+        this.radio = radio;
+        this.ano = ano;
+        this.motor = motor;
+    }
 
     public Carro compararAno(Carro outroCarro) {
         if (this.ano > outroCarro.ano) {
