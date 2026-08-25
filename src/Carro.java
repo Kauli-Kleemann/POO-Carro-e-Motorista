@@ -3,12 +3,22 @@ public class Carro {
     boolean radio;
     int ano;
     Motor motor;
+    Motorista motorista;
 
     public Carro(int bancos, boolean radio, int ano, Motor motor) {
         this.bancos = bancos;
         this.radio = radio;
         this.ano = ano;
         this.motor = motor;
+        this.motorista = motorista;
+    }
+
+    public Motorista getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(Motorista motorista) {
+        this.motorista = motorista;
     }
 
     public Carro compararAno(Carro outroCarro) {
