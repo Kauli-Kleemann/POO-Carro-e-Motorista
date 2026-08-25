@@ -7,6 +7,7 @@ public class Motorista {
         this.nome = nome;
         this.carro = carro;
         this.endereco = endereco;
+        this.carro.setMotorista(this);
     }
 
     public void exibirMotoristaECarro() {
@@ -15,5 +16,4 @@ public class Motorista {
         System.out.println("\nEndereço:");
         this.endereco.exibirEndereco();
     }
-
 }

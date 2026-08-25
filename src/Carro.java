@@ -10,7 +10,6 @@ public class Carro {
         this.radio = radio;
         this.ano = ano;
         this.motor = motor;
-        this.motorista = motorista;
     }
 
     public Motorista getMotorista() {
@@ -41,5 +40,6 @@ public class Carro {
             System.out.println("Bancos: " + this.bancos + ";");
             System.out.println("Rádio: " + this.radio + ";");
             this.motor.exibirMotor();
+            System.out.println("\nMotorista: " + this.motorista.nome + ".");
     }
 }
